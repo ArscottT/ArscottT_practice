@@ -4,26 +4,61 @@
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<style>
+				html {
+			  	background: url(images/14.jpg) no-repeat center center fixed;
+			  	-webkit-background-size: cover;
+			  	-moz-background-size: cover;
+			  	-o-background-size: cover;
+			  	background-size: cover;
+				}
+			</style>
 		</head>
 		<body>
-			<nav>
+			<header>
 	    		<ul>
 	        		<li><a href="/">Home</a></li>
 		        	<li><a href="/about">About</a></li>
 	        		<li><a href="/cv">CV</a></li>
+							<li><a href="/projects">Projects</a></li>
 	        		<li><a href="/blog">Blog</a></li>
 	    		</ul>
-			</nav>
-			<div class="container">
-			
+			</header>
+			<div class="container content">
+
 			{{ content }}
-			
+
 			</div><!-- /.container -->
 			<footer>
-	    		<ul>
-	        		<li><a href="mailto:blankb@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/blank">github.com/blank</a></li>
-				</ul>
+				<div class="container">
+					<div class="major last">
+						<h2>Trying to get hold of me?</h2>
+					</div>
+
+					<p>Feel free to contact me in which ever way is easiest</p>
+
+					<form method="post" action="#">
+						<div class="row">
+								<input type="text" name="name" placeholder="Name" />
+								<input type="email" name="email" placeholder="Email" />
+						</div>
+						<div class="row">
+								<textarea name="message" placeholder="Message" rows="6"></textarea>
+						</div>
+						<div class="row">
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+						</div>
+					</form>
+				</div>
+
+				<ul class="icons">
+						<li><a href="#" class="contact">Gmail</a></li>
+						<li><a href="#" class="contact">Twitter</a></li>
+						<li><a href="#" class="contact">Facebook</a></li>
+						<li><a href="#" class="contact">Github</a></li>
+					</ul>
 			</footer>
 		</body>
 	</html>

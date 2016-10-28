@@ -12,16 +12,37 @@
 			  	-o-background-size: cover;
 			  	background-size: cover;
 				}
+				.hidden {
+    			display:none;
+				}
+
+				.unhidden {
+    			display:block;
+				}
 			</style>
+			<script type="text/javascript">
+    		function unhide(divID, button) {
+    			var item = document.getElementById(divID);
+					//var button = document.getElementById(buttonID);
+          item.className = (item.className == 'hidden') ? 'unhidden':'hidden';
+
+					if (item.className=='hidden'){
+		        button.value = 'contact'
+    			}
+					else {
+        		button.value = 'hide'
+    			}
+    		}
+			</script>
 		</head>
 		<body>
 			<header>
 	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-							<li><a href="/projects">Projects</a></li>
-	        		<li><a href="/blog">Blog</a></li>
+	        	<li><a href="/">Home</a></li>
+		      	<li><a href="/about">About</a></li>
+	        	<li><a href="/cv">CV</a></li>
+						<li><a href="/projects">Projects</a></li>
+	        	<li><a href="/blog">Blog</a></li>
 	    		</ul>
 			</header>
 			<div class="container content">
@@ -30,11 +51,10 @@
 
 			</div><!-- /.container -->
 			<footer>
-				<div class="container">
-					<div class="major last">
-						<h2>Trying to get hold of me?</h2>
-					</div>
-
+				<input type="button" onclick="unhide('contact_box', this) " value="contact">
+				</body>
+				<div id="contact_box" class="hidden">
+					<h2>Trying to get hold of me?</h2>
 					<p>Feel free to contact me in which ever way is easiest</p>
 
 					<form method="post" action="#">

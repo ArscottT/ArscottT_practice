@@ -37,15 +37,25 @@ p {
     color: #333;
 }
 footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-    text-align: center;
+  border-top: 1px solid #d5d5d5;
+  font-size: .8em;
+  text-align: center;
+  position:absolute;
+  bottom:0;
+  width: 70%;
+}
+
+#contact_box {
+  margin-top: 3em;
 }
 
 /*content*/
 .content {
   clear: right;
-  text-align: center;;
+  text-align: center;
+  width: 70%;
+  margin: 60px auto;
+  
 }
 
 /*contact*/
@@ -75,7 +85,7 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 	background: rgba(224, 224, 224, 0.15);
 }
 
-input[type="submit"] {
+input[type="submit"], input[type="button"] {
   -moz-appearance: none;
 	-webkit-appearance: none;
 	-ms-appearance: none;
@@ -102,8 +112,12 @@ input[type="submit"] {
 	text-transform: uppercase;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, input[type="button"]:hover {
   background: rgba(224, 224, 224, 0.15);
+}
+
+input[type='button'] {
+  margin-top: 0.5em;
 }
 
 .contact:hover {
@@ -114,4 +128,7 @@ input[type="submit"]:hover {
 /*blurb - index html*/
 div h1 {
   colour: #FFFFFF;
+}
+div h2 {
+  margin-top: -1em;
 }

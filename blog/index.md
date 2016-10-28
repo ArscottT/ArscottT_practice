@@ -1,0 +1,19 @@
+---
+layout: default
+title: Tom Arscott, Developer
+---
+For the initial post in the blog I thought that a list of the resources and guides used in the creation of this website would be helpful to those that came here.
+
+Guides:
+
+- The very first baby steps: [here](http://jmcglone.com/guides/github-pages/)
+- Absolute Horizontal And Vertical Centering In CSS: [here](https://www.smashingmagazine.com/2013/08/absolute-horizontal-vertical-centering-css/)
+- An interesting guide on how to scale fonts dependent on containers and screen size: [here](https://madebymike.com.au/writing/precise-control-responsive-typography/)
+
+
+Resources:
+
+- [Main page font (my name)](https://fonts.google.com/specimen/Josefin+Slab?selection.family=Josefin+Slab)
+- A very good example side written for Jekyll and Github pages can be found [here](https://github.com/rsms/rsms.github.com)
+
+Theres more to come, I'm still finding them all

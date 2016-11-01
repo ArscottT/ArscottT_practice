@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tom Arscott, Developer
+title: Tutorial post
 ---
 For the initial post in the blog I thought that a list of the resources and guides used in the creation of this website would be helpful to those that came here.
 

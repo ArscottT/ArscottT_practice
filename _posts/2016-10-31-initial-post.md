@@ -15,5 +15,9 @@ Resources:
 
 - [Main page font (my name)](https://fonts.google.com/specimen/Josefin+Slab?selection.family=Josefin+Slab)
 - A very good example side written for Jekyll and Github pages can be found [here](https://github.com/rsms/rsms.github.com)
+- [Form submission](https://formspree.io/)
+- [Email address encryption](http://hivelogic.com/enkoder/)
+- [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [General email hiding techniques](http://www.labnol.org/internet/hide-email-address-web-pages/28364/)
 
 Theres more to come, I'm still finding them all

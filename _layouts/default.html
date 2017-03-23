@@ -46,18 +46,22 @@
 	        	<li><a href="/blog">Blog</a></li>
 	    		</ul>
 			</header>
-			<div class="container content">
+			<div class="container" id="content">
 
 			{{ content }}
 
 			</div><!-- /.container -->
 			<footer>
 				<input type="button" onclick="unhide('contact_box', this) " value="contact">
-				</body>
+				<noscript><p>You do not have scripts enabled in your browser.
+										This form will not work (neither will Gmail contact below)</p></noscript>
 				<div id="contact_box" class="hidden">
-					<p>Feel free to contact me in which ever way is easiest</p>
-
-					<form method="post" action="#">
+					<p>Feel free to send me a message on here. Or to use the email/ contact methods below</p>
+					<script>
+						var z = "jondoe@email.com"
+						document.writeln('<form method="post" action="https://formspree.io/' + z + '">')
+					</script>
+					<noscript><form method="post" action=""></noscript>
 						<div class="row">
 								<input type="text" name="name" placeholder="Name" />
 								<input type="email" name="email" placeholder="Email" />
@@ -66,7 +70,7 @@
 								<textarea name="message" placeholder="Message" rows="6"></textarea>
 						</div>
 						<div class="row">
-								<ul class="actions">
+								<ul>
 									<li><input type="submit" value="Send Message" /></li>
 								</ul>
 						</div>
@@ -74,7 +78,25 @@
 				</div>
 
 				<ul>
-						<li><a href="#" target="_blank" class="contact">Gmail</a></li>
+						<li><script type="text/javascript">
+							//<![CDATA[
+							<!--
+							var x="function f(x){var i,o=\"\",l=x.length;for(i=l-1;i>=0;i--) {try{o+=x.c" +
+							"harAt(i);}catch(e){}}return o;}f(\")\\\"function f(x,y){var i,o=\\\"\\\\\\\""+
+							"\\\\,l=x.length;for(i=0;i<l;i++){y%=127;o+=String.fromCharCode(x.charCodeAt" +
+							"(i)^(y++));}return o;}f(\\\"\\\\hbmz}t|g:bd~l|vu4?\\\\\\\\\\\"\\\\~\\\\\\\\" +
+							"000IPFB\\\\\\\\030z\\\\\\\\005EHCGXB\\\\\\\\024[X^_RGTDD[VNO|ZS^)-l +(y4=+ " +
+							"./9s\\\\\\\\0135'7?;%3%x*3/9}\\\\\\\\0312\\\\\\\\001\\\\\\\\010\\\\\\\\016?" +
+							"FE\\\\\\\\022\\\\\\\\016\\\\\\\\034\\\\\\\\005\\\\\\\\017V0O+\\\\\\\\002\\\\"+
+							"\\\\021\\\\\\\\030\\\\\\\\036S\\\\\\\\031\\\\\\\\020*UF>\\\\\\\\027\\\\\\\\" +
+							"032\\\\\\\\025\\\\\\\\021B/`<!->6<\\\"\\\\,12)\\\"(f};)lo,0(rtsbus.o nruter" +
+							"};)i(tArahc.x=+o{)--i;0=>i;1-l=i(rof}}{)e(hctac};l=+l;x=+x{yrt{)84=!)31/l(t" +
+							"AedoCrahc.x(elihw;lo=l,htgnel.x=lo,\\\"\\\"=o,i rav{)x(f noitcnuf\")"        ;
+							while(x=eval(x));
+							//-->
+							//]]>
+							</script>
+						</li>
 						<li><a href="https://at.linkedin.com/in/thomas-arscott-5b3184b8" target="_blank" class="contact">LinkedIn</a></li>
 						<li><a href="#" target="_blank" class="contact">Facebook</a></li>
 						<li><a href="https://github.com/ArscottT" target="_blank" class="contact">Github</a></li>

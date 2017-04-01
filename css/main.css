@@ -1,12 +1,17 @@
+.hidden {
+    display:none;
+}
+.unhidden {
+    display:block;
+}
+
 body {
     margin: 60px auto;
     width: 70%;
     font-family:'Helvetica', serif;
 }
-
 header {
   float: right;
-  /*position: fixed;*/
   right: 0px;
   top: 0px;
 }
@@ -44,14 +49,6 @@ footer {
   width: 70%;
 }
 
-/*footer .unhidden {
-    background: rgba(225, 225, 225, 0.4);
-}*/
-
-#contact_box {
-  margin-top: 3em;
-}
-
 /*content*/
 #content {
   clear: right;
@@ -62,10 +59,12 @@ footer {
 }
 
 /*contact*/
+#contact_box {
+  margin-top: 3em;
+}
 #contact_box p {
   color: rgba(225, 225, 225, 0.9);
 }
-
 input[type="text"], input[type="email"], textarea {
 	-moz-appearance: none;
 	-webkit-appearance: none;
@@ -88,12 +87,10 @@ input[type="text"], input[type="email"], textarea {
 	opacity: 1;
     resize: none;
 }
-
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 	background: rgba(224, 224, 224, 0.6);
     color: rgba(0, 0, 0, 0.9);
 }
-
 input[type="submit"], input[type="button"] {
     -moz-appearance: none;
 	-webkit-appearance: none;
@@ -120,15 +117,12 @@ input[type="submit"], input[type="button"] {
 	text-decoration: none;
 	text-transform: uppercase;
 }
-
 input[type="submit"]:hover, input[type="button"]:hover {
   background: rgba(225, 225, 225, 0.15);
 }
-
 input[type='button'] {
   margin-top: 0.5em;
 }
-
 .contact:hover {
   text-decoration: none;
   color: #595959;
@@ -182,29 +176,23 @@ textarea:focus:-ms-input-placeholder {
 }
 
 /*title - index html*/
-#title {
+#title_name {
   width: 20%;
   height: 20%;
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  /*border-radius: 4px;
-	border: 0;
-  border: solid 1px rgba(224, 224, 224, 0.75);*/
 }
-
-#title h1 {
+#title_name h1 {
   font-size: font-size: 16px; font-size: 3vw;
   font-family: 'Josefin Slab', serif;
   color: rgba(225, 225, 225, 0.9);
 }
-
-#title h2 {
+#title_name h2 {
   font-size: font-size: 10px; font-size: 1.5vw;
   color: rgba(220, 220, 220, 0.9);
   font-family: 'Josefin Slab', serif;
 }
-
 div h2 {
   margin-top: -1em;
 }
@@ -213,13 +201,11 @@ div h2 {
 .posts {
   padding-top: 1em;
 }
-
 #latest_post {
   margin-left: 0px;
   float: left;
   width: 70%;
 }
-
 #recent_posts {
   float: right;
   width: 30%;

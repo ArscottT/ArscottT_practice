@@ -1,104 +1,90 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
-			<style>
-				html {
-			  	    background: url({{ site.url }}/images/14.jpg) no-repeat center center fixed;
-			  	    -webkit-background-size: cover;
-			  	    -moz-background-size: cover;
-			  	    -o-background-size: cover;
-			  	    background-size: cover;
-				}
-				.hidden {
-    			    display:none;
-				}
+<html>
+	<head>
+		<title>{{ page.title }}</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+		<style>
+			html {
+		  	    background: url({{ site.url }}/images/14.jpg) no-repeat center center fixed;
+		  	    -webkit-background-size: cover;
+		  	    -moz-background-size: cover;
+		  	    -o-background-size: cover;
+		  	    background-size: cover;
+			}
+		</style>
+		<script type="text/javascript">
+		function unhide_contact(button) {
+			var box = document.getElementById('contact_box');
+            box.className = (box.className == 'hidden') ? 'unhidden':'hidden';
 
-				.unhidden {
-    			    display:block;
-				}
-			</style>
-			<script type="text/javascript">
-    		function unhide_contact(button) {
-    			var box = document.getElementById('contact_box');
-                box.className = (box.className == 'hidden') ? 'unhidden':'hidden';
+			if (box.className=='hidden'){
+	            button.value = 'contact'
+			}
+			else {
+    		    button.value = 'hide'
+			}
+		}
+		</script>
+	</head>
+	<body>
+		<header>
+    		<ul>
+        	<li><a href="/">Home</a></li>
+	      	<li><a href="/about">About</a></li>
+        	<li><a href="/cv">CV</a></li>
+			<li><a href="/projects">Projects</a></li>
+        	<li><a href="/blog">Blog</a></li>
+    		</ul>
+		</header>
+		<div id="content">
 
-				if (box.className=='hidden'){
-		            button.value = 'contact'
-    			}
-				else {
-        		    button.value = 'hide'
+		{{ content }}
 
-    			}
-    		}
-			</script>
-		</head>
-		<body>
-			<header>
-	    		<ul>
-	        	<li><a href="/">Home</a></li>
-		      	<li><a href="/about">About</a></li>
-	        	<li><a href="/cv">CV</a></li>
-						<li><a href="/projects">Projects</a></li>
-	        	<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</header>
-			<div class="container" id="content">
+		</div>
+		<footer>
+			<input type="button" onclick="unhide_contact(this) " value="contact">
+			<noscript><p>You do not have scripts enabled in your browser.
+									This form will not work (neither will Gmail contact below)</p></noscript>
+			<div id="contact_box" class="hidden">
+				<p>Feel free to send me a message on here. Or to use the email/ contact methods below</p>
+				<script>
+					var z = "jondoe@email.com"
+					document.writeln('<form method="post" action="https://formspree.io/' + z + '">')
+				</script>
+				<noscript><form method="post" action=""></noscript>
+					<div class="row">
+						<input type="text" name="name" placeholder="Name" />
+						<input type="email" name="email" placeholder="Email" />
+					</div>
+					<div class="row">
+						<textarea name="message" placeholder="Message" rows="3"></textarea>
+					</div>
+					<div class="row">
+						<input type="submit" value="Send Message" />
+					</div>
+				</form>
+			</div>
 
-			{{ content }}
-
-			</div><!-- /.container -->
-			<footer>
-				<input type="button" onclick="unhide_contact(this) " value="contact">
-				<noscript><p>You do not have scripts enabled in your browser.
-										This form will not work (neither will Gmail contact below)</p></noscript>
-				<div id="contact_box" class="hidden">
-					<p>Feel free to send me a message on here. Or to use the email/ contact methods below</p>
-					<script>
-						var z = "jondoe@email.com"
-						document.writeln('<form method="post" action="https://formspree.io/' + z + '">')
-					</script>
-					<noscript><form method="post" action=""></noscript>
-						<div class="row">
-								<input type="text" name="name" placeholder="Name" />
-								<input type="email" name="email" placeholder="Email" />
-						</div>
-						<div class="row">
-								<textarea name="message" placeholder="Message" rows="6"></textarea>
-						</div>
-						<div class="row">
-								<ul>
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-						</div>
-					</form>
-				</div>
-
-				<ul>
-						<li><script type="text/javascript">
-							//<![CDATA[
-							<!--
-							var x="function f(x){var i,o=\"\",l=x.length;for(i=l-1;i>=0;i--) {try{o+=x.c" +
-							"harAt(i);}catch(e){}}return o;}f(\")\\\"function f(x,y){var i,o=\\\"\\\\\\\""+
-							"\\\\,l=x.length;for(i=0;i<l;i++){y%=127;o+=String.fromCharCode(x.charCodeAt" +
-							"(i)^(y++));}return o;}f(\\\"\\\\hbmz}t|g:bd~l|vu4?\\\\\\\\\\\"\\\\~\\\\\\\\" +
-							"000IPFB\\\\\\\\030z\\\\\\\\005EHCGXB\\\\\\\\024[X^_RGTDD[VNO|ZS^)-l +(y4=+ " +
-							"./9s\\\\\\\\0135'7?;%3%x*3/9}\\\\\\\\0312\\\\\\\\001\\\\\\\\010\\\\\\\\016?" +
-							"FE\\\\\\\\022\\\\\\\\016\\\\\\\\034\\\\\\\\005\\\\\\\\017V0O+\\\\\\\\002\\\\"+
-							"\\\\021\\\\\\\\030\\\\\\\\036S\\\\\\\\031\\\\\\\\020*UF>\\\\\\\\027\\\\\\\\" +
-							"032\\\\\\\\025\\\\\\\\021B/`<!->6<\\\"\\\\,12)\\\"(f};)lo,0(rtsbus.o nruter" +
-							"};)i(tArahc.x=+o{)--i;0=>i;1-l=i(rof}}{)e(hctac};l=+l;x=+x{yrt{)84=!)31/l(t" +
-							"AedoCrahc.x(elihw;lo=l,htgnel.x=lo,\\\"\\\"=o,i rav{)x(f noitcnuf\")"        ;
-							while(x=eval(x));
-							//-->
-							//]]>
-							</script></li>
-						<li><a href="https://at.linkedin.com/in/thomas-arscott-5b3184b8" target="_blank" class="contact">LinkedIn</a></li>
-						<li><a href="https://github.com/ArscottT" target="_blank" class="contact">Github</a></li>
-					</ul>
-			</footer>
-		</body>
-	</html>
+			<ul>
+				<li><script type="text/javascript">
+					var x="function f(x){var i,o=\"\",l=x.length;for(i=l-1;i>=0;i--) {try{o+=x.c" +
+					"harAt(i);}catch(e){}}return o;}f(\")\\\"function f(x,y){var i,o=\\\"\\\\\\\""+
+					"\\\\,l=x.length;for(i=0;i<l;i++){y%=127;o+=String.fromCharCode(x.charCodeAt" +
+					"(i)^(y++));}return o;}f(\\\"\\\\hbmz}t|g:bd~l|vu4?\\\\\\\\\\\"\\\\~\\\\\\\\" +
+					"000IPFB\\\\\\\\030z\\\\\\\\005EHCGXB\\\\\\\\024[X^_RGTDD[VNO|ZS^)-l +(y4=+ " +
+					"./9s\\\\\\\\0135'7?;%3%x*3/9}\\\\\\\\0312\\\\\\\\001\\\\\\\\010\\\\\\\\016?" +
+					"FE\\\\\\\\022\\\\\\\\016\\\\\\\\034\\\\\\\\005\\\\\\\\017V0O+\\\\\\\\002\\\\"+
+					"\\\\021\\\\\\\\030\\\\\\\\036S\\\\\\\\031\\\\\\\\020*UF>\\\\\\\\027\\\\\\\\" +
+					"032\\\\\\\\025\\\\\\\\021B/`<!->6<\\\"\\\\,12)\\\"(f};)lo,0(rtsbus.o nruter" +
+					"};)i(tArahc.x=+o{)--i;0=>i;1-l=i(rof}}{)e(hctac};l=+l;x=+x{yrt{)84=!)31/l(t" +
+					"AedoCrahc.x(elihw;lo=l,htgnel.x=lo,\\\"\\\"=o,i rav{)x(f noitcnuf\")"        ;
+					while(x=eval(x));
+				</script></li>
+				<li><a href="https://at.linkedin.com/in/thomas-arscott-5b3184b8" target="_blank" class="contact">LinkedIn</a></li>
+				<li><a href="https://github.com/ArscottT" target="_blank" class="contact">Github</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

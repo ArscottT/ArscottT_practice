@@ -7,31 +7,31 @@
 			<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
 			<style>
 				html {
-			  	background: url({{ site.url }}/images/14.jpg) no-repeat center center fixed;
-			  	-webkit-background-size: cover;
-			  	-moz-background-size: cover;
-			  	-o-background-size: cover;
-			  	background-size: cover;
+			  	    background: url({{ site.url }}/images/14.jpg) no-repeat center center fixed;
+			  	    -webkit-background-size: cover;
+			  	    -moz-background-size: cover;
+			  	    -o-background-size: cover;
+			  	    background-size: cover;
 				}
 				.hidden {
-    			display:none;
+    			    display:none;
 				}
 
 				.unhidden {
-    			display:block;
+    			    display:block;
 				}
 			</style>
 			<script type="text/javascript">
-    		function unhide(divID, button) {
-    			var item = document.getElementById(divID);
-					//var button = document.getElementById(buttonID);
-          item.className = (item.className == 'hidden') ? 'unhidden':'hidden';
+    		function unhide_contact(button) {
+    			var box = document.getElementById('contact_box');
+                box.className = (box.className == 'hidden') ? 'unhidden':'hidden';
 
-					if (item.className=='hidden'){
-		        button.value = 'contact'
+				if (box.className=='hidden'){
+		            button.value = 'contact'
     			}
-					else {
-        		button.value = 'hide'
+				else {
+        		    button.value = 'hide'
+
     			}
     		}
 			</script>
@@ -52,7 +52,7 @@
 
 			</div><!-- /.container -->
 			<footer>
-				<input type="button" onclick="unhide('contact_box', this) " value="contact">
+				<input type="button" onclick="unhide_contact(this) " value="contact">
 				<noscript><p>You do not have scripts enabled in your browser.
 										This form will not work (neither will Gmail contact below)</p></noscript>
 				<div id="contact_box" class="hidden">
@@ -95,10 +95,8 @@
 							while(x=eval(x));
 							//-->
 							//]]>
-							</script>
-						</li>
+							</script></li>
 						<li><a href="https://at.linkedin.com/in/thomas-arscott-5b3184b8" target="_blank" class="contact">LinkedIn</a></li>
-						<li><a href="#" target="_blank" class="contact">Facebook</a></li>
 						<li><a href="https://github.com/ArscottT" target="_blank" class="contact">Github</a></li>
 					</ul>
 			</footer>

@@ -6,12 +6,13 @@ title: Tom Arscott, Developer
 <img src="{{ site.url }}/images/portrait.jpg" width="50%" align="right">
 
 Hi!
-My name is Tom Arscott.
 
-Over the past few years I have had a broad array of experience in different industry sectors. To name a few companies: [Selex ES](http://www.uk.leonardocompany.com/) (which is now called FinSelMecainia to those in the know), [Pioneers](https://Pioneers.io) and [Infarm](https://www.infarm.de)
+My name is Tom Arscott. I am a passionate developer and and insatiable explorer.
 
-My passion lies with FPGA's and VHDL however my life has taken a waving path at the moment.
+Over the past few years I have had a broad array of experience in different industry sectors. From defence systems ([Selex ES](http://www.uk.leonardocompany.com/)) to startup analysis ([Pioneers](https://Pioneers.io)). And recently I have started traveling the world and discovered a love of new places.
 
-More information can be found through either [LinkedIn](https://at.linkedin.com/in/thomas-arscott-5b3184b8). Or the CV page if you like the website that much.
+With these in mind I decided to become a digital nomad and aim for a life without limits. The first step was to start a freelance career, the next to was to take a plane with a one way ticket. My life has never been the same since.
 
-I am currently working on my portfolio with the aim of pursuing a more freelance career.   
+Currently I am working on my portfolio in order to further show my developer talent.    
+
+Please contact me if you would like to know more.

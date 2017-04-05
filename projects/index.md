@@ -13,7 +13,7 @@ The parts bin is a collection of useful VHDL entities that I am in the process o
 
 [Walker](https://github.com/ArscottT/)
 
-Walker is the beguinnings of a quadraped walking robot based on a Mojo FPGA.
+Walker is the beginnings of a quadraped walking robot based on a Mojo FPGA.
 
 ## Web
 

@@ -3,7 +3,7 @@ layout: default
 title: Tom Arscott, Developer
 ---
 
-<img src="{{ site.url }}/images/portrait.jpg" width="50%" align="right">
+<img src="{{ site.url }}/images/portrait.jpg" width="30%" align="right">
 
 Hi!
 

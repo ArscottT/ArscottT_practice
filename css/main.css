@@ -317,7 +317,8 @@ textarea:focus:-ms-input-placeholder {
 
 /*title - index html*/
 #title_name {
-/*how to vertically center*/
+    /* scales due to width CHANGE */
+    padding-top: 20%;
 }
 #title_name h1 {
   font-size: font-size: 16px; font-size: 3vw;

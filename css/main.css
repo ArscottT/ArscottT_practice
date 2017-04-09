@@ -6,23 +6,13 @@
 }
 
 body {
-    margin: 60px auto;
+    margin: auto;
     width: 70%;
     font-family:'Helvetica', serif;
+    overflow: auto;
 }
 header {
-  float: right;
-  right: 0px;
-  top: 0px;
-}
-header ul, footer ul {
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-header ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+
 }
 a {
     text-decoration: none;
@@ -36,17 +26,173 @@ h1, h2, h3 {
     font-family: 'Josefin Slab', serif;
 }
 footer {
-  border-top: 1px solid #d5d5d5;
+  border-top: 1px solid rgba(225, 225, 225, 0.9);
   font-size: .8em;
   text-align: center;
   position: fixed;
   bottom: 0;
   width: 70%;
 }
+footer ul {
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* logo */
+#logo {
+    position: fixed;
+    left: 50px;
+    top: 10px;
+
+    z-index: 1;
+
+    -webkit-transition: all .3s ease-in;
+       -moz-transition: all .3s ease-in;
+         -o-transition: all .3s ease-in;
+            transition: all .3s ease-in;
+}
+#menu-switch:checked ~ #logo {
+    left: 125px;
+    color: rgba(0,0,0,1);
+}
+
+/* push menu */
+#menu-switch {
+  display:none;
+}
+#menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+
+    width: 300px;
+    height: 100%;
+    padding: 50px 30px;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    -webkit-transition: all .3s ease-in;
+       -moz-transition: all .3s ease-in;
+         -o-transition: all .3s ease-in;
+            transition: all .3s ease-in;
+    text-align: center;
+
+    background-color: rgba(225, 225, 225, 0.5);
+}
+#menu ul {
+    padding: 0;
+    margin-top: 30px;
+    list-style: none;
+}
+
+#menu ul li a {
+    display: block;
+
+    font-weight: bold;
+    line-height: 50px;
+
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: rgba(0, 0, 0, 0.9);
+    border-top: 1px solid rgba(225, 225, 225, 0.9);
+}
+#menu ul li:last-child a {
+    border-bottom: 1px solid rgba(225, 225, 225, 0.9);
+}
+#menu ul li a:hover {
+    background: rgba(225, 225, 225, 0.6);
+}
+#menu-switch:checked ~ #menu {
+    left: 0;
+}
+
+/* MENU TOGGLE ICON */
+#menu-toggle {
+    display:inline-block;
+    position: fixed;
+
+    width: 51px;
+    height: 51px;
+    top: 50%;
+    left: 5px;
+    background: rgba(225, 225, 225, 0.4);
+
+    cursor: pointer;
+
+    border: none;
+    -webkit-border-radius: 50px;
+       -moz-border-radius: 50px;
+            border-radius: 50px;
+
+    -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+         -o-transition: all .5s ease;
+            transition: all .5s ease;
+}
+#menu-toggle:focus {
+    outline: none;
+}
+#menu-toggle:before,
+#menu-toggle:after {
+    position: absolute;
+    content: "";
+    background-color: #232629;
+}
+
+#menu-toggle:before {
+    top: 12px;
+    left: 25px;
+
+    width: 1px;
+    height: 27px;
+}
+#menu-toggle:after {
+    top: 25px;
+    left: 12px;
+
+    width: 27px;
+    height: 1px;
+}
+
+#menu-switch:checked ~ .page-wrap #menu-toggle {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+/*page wrap*/
+.page-wrap {
+    position: fixed;
+    width: 70%;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    -webkit-transition: all .3s ease-in;
+       -moz-transition: all .3s ease-in;
+         -o-transition: all .3s ease-in;
+            transition: all .3s ease-in;
+}
+#menu-switch:checked ~ .page-wrap {
+    margin-left: 300px;
+}
 
 /*content*/
 #content {
-  clear: right;
+  margin-top: 60px;
   text-align: center;
   color: rgba(225, 225, 225, 0.9);
 }
@@ -168,11 +314,7 @@ textarea:focus:-ms-input-placeholder {
 
 /*title - index html*/
 #title_name {
-  width: 20%;
-  height: 20%;
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+/*how to vertically center*/
 }
 #title_name h1 {
   font-size: font-size: 16px; font-size: 3vw;
@@ -185,9 +327,6 @@ textarea:focus:-ms-input-placeholder {
 }
 
 /*posts*/
-.posts {
-  padding-top: 1em;
-}
 #latest_post {
   margin-left: 0px;
   float: left;

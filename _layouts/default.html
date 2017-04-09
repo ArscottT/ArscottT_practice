@@ -51,7 +51,7 @@
 		    <footer>
 		    	<input type="button" onclick="unhide_contact(this) " value="contact">
 		    	<noscript><p>You do not have scripts enabled in your browser.
-		    							This form will not work (neither will Gmail contact below)</p></noscript>
+		    				 This form will not work (neither will Gmail contact below)</p></noscript>
 		    	<div id="contact_box" class="hidden">
 		    		<p>Feel free to send me a message on here. Or to use the email/ contact methods below</p>
 		    		<script>
@@ -59,16 +59,10 @@
 		    			document.writeln('<form method="post" action="https://formspree.io/' + z + '">')
 		    		</script>
 		    		<noscript><form method="post" action=""></noscript>
-		    			<div class="row">
 		    				<input type="text" name="name" placeholder="Name" />
 		    				<input type="email" name="email" placeholder="Email" />
-		    			</div>
-		    			<div class="row">
 		    				<textarea name="message" placeholder="Message" rows="3"></textarea>
-		    			</div>
-		    			<div class="row">
 		    				<input type="submit" value="Send Message" />
-		    			</div>
 		    		</form>
 		    	</div>
 

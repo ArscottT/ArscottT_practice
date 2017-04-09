@@ -220,7 +220,7 @@ input[type="text"], input[type="email"], textarea {
 	color: inherit;
 	display: block;
 	outline: 0;
-	padding: 0.75em;
+	padding: 0.75em 0 0.75em;
 	text-decoration: none;
 	width: 100%;
 	opacity: 1;
@@ -259,7 +259,10 @@ input[type="submit"], input[type="button"] {
 input[type="submit"]:hover, input[type="button"]:hover {
   background: rgba(225, 225, 225, 0.15);
 }
-input[type='button'] {
+input[type="submit"]:focus, input[type="button"]:focus {
+  outline: none;
+}
+input[type='button'], input[type='submit'] {
   margin-top: 0.5em;
 }
 .contact:hover {

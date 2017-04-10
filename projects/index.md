@@ -24,6 +24,6 @@ This site acts as a show peice of my web development talent and as a playground 
 
 ## Android
 
-[Mist](https://github.com/ArscottT/)
+[Mist](https://github.com/ArscottT/Mist)
 
 Written using Java, for Android. Mist is a top down RPG with a persistant home map and a procedurally generated dungeon world consumed in maddness indusing mist.  

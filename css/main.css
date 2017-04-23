@@ -176,6 +176,7 @@ footer ul li {
 .page-wrap {
     position: fixed;
     width: 70%;
+    height: 100%;
 
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -185,9 +186,12 @@ footer ul li {
        -moz-transition: all .3s ease-in;
          -o-transition: all .3s ease-in;
             transition: all .3s ease-in;
+
+    box-shadow: none;
 }
 #menu-switch:checked ~ .page-wrap {
-    margin-left: 300px;
+    /*margin-left: 300px;*/
+    box-shadow: inset 0px 0px 50px black;
 }
 
 /*content*/

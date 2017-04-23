@@ -11,6 +11,10 @@ title: Tom Arscott, Developer
 
 The parts bin is a collection of useful VHDL entities that I am in the process of writing. To act as a reference for myself and for others.
 
+[Reference Projects](https://github.com/ArscottT/)
+
+This is a repository full of reference projects that FPGA's/ VHDL can be used to solve. Including traffic light controllers and hydroponic farms.
+
 [Walker](https://github.com/ArscottT/)
 
 Walker is the beginnings of a quadraped walking robot based on a Mojo FPGA.

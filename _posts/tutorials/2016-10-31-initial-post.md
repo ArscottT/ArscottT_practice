@@ -1,8 +1,10 @@
 ---
 layout: default
-title: Tutorial post
+title: Resources
 categories: Tutorials
 ---
+<h1> Resources </h1>
+
 For the initial post in the blog I thought that a list of the resources and guides used in the creation of this website would be helpful to those that came here.
 
 Guides:
@@ -20,7 +22,7 @@ Resources:
 - [Email address encryption](http://hivelogic.com/enkoder/)
 - [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - [General email hiding techniques](http://www.labnol.org/internet/hide-email-address-web-pages/28364/)
-- [permalink] (https://jekyllrb.com/docs/permalinks/#builtinpermalinkstyles)
+- [permalinks] (https://jekyllrb.com/docs/permalinks/#builtinpermalinkstyles)
 
 #### http://www.madebymarket.com/blog/dev/fun-jekyll-tricks.html
   https://blog.webjeda.com/jekyll-categories/

@@ -7,17 +7,17 @@ title: Tom Arscott, Developer
 
 ## VHDL
 
+[FUMO](https://github.com/ArscottT/Fumo)
+
+Fumo is the beginnings of an FPGA based mini sumo robot. The eventual aim is to compete in the autonomous competitions.
+
 [The parts bin](https://github.com/ArscottT/)
 
 The parts bin is a collection of useful VHDL entities that I am in the process of writing. To act as a reference for myself and for others.
 
-[Reference Projects](https://github.com/ArscottT/)
+[Hydroponic farm](https://github.com/ArscottT/)
 
-This is a repository full of reference projects that FPGA's/ VHDL can be used to solve. Including traffic light controllers and hydroponic farms.
-
-[Walker](https://github.com/ArscottT/)
-
-Walker is the beginnings of a quadraped walking robot based on a Mojo FPGA.
+The aim of this project is to create a farm 'brain' based on an FPGA. 
 
 ## Web
 

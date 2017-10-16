@@ -31,7 +31,7 @@
 	<body>
         <input id="menu-switch" type="checkbox" />
         <a id="logo" href="/"><h1>TA</h1></a>
-        <nav id="menu">
+        <nav role="navigation" id="menu">
             <ul>
 	      	<li><a href="{{ site.url }}/about">About</a></li>
         	<li><a href="{{ site.url }}/cv">CV</a></li>
@@ -39,8 +39,8 @@
         	<li><a href="{{ site.url }}/blog">Blog</a></li>
     		</ul>
         </nav>
-        <div class="page-wrap">
-            <label for="menu-switch" id="menu-toggle">
+        <main role="main" class="page-wrap">
+            <label role="button" for="menu-switch" id="menu-toggle">
                 <div id="one"></div>
                 <div id="two"></div>
                 <div id="three"></div>
@@ -59,9 +59,9 @@
 		    		<p>Feel free to send me a message on here. Or to use the email/ contact methods below</p>
 		    		<script>
 		    			var z = "jondoe@email.com"
-		    			document.writeln('<form method="post" action="https://formspree.io/' + z + '">')
+		    			document.writeln('<form role="form" method="post" action="https://formspree.io/' + z + '">')
 		    		</script>
-		    		<noscript><form method="post" action=""></noscript>
+		    		<noscript><form role="from" method="post" action=""></noscript>
 		    				<input type="text" name="name" placeholder="Name" />
 		    				<input type="email" name="email" placeholder="Email" />
 		    				<textarea name="message" placeholder="Message" rows="3"></textarea>
@@ -88,6 +88,6 @@
 		    		<li><a href="https://github.com/ArscottT" target="_blank" class="contact">Github</a></li>
 		    	</ul>
 		    </footer>
-        </div>
+        </main>
 	</body>
 </html>

@@ -3,7 +3,7 @@ layout: default
 title: Tom Arscott, Developer
 ---
 
-<img src="{{ site.url }}/images/portrait.jpg" width="30%" align="right">
+<img src="{{ site.url }}/images/portrait.jpg" width="30%" align="right" alt="profile_picture">
 
 Hi!
 
@@ -15,4 +15,4 @@ With this in mind I decided to become a digital nomad and aim for a 'life withou
 
 A portfolio is important as a developer, so currently this is the main focus of my time. My work so far can be seen under the projects page, and I will be adding to this as I progress.     
 
-I have also started a blog to record the lessons I learn as I continue on this course. So feel free to head over and read about my journey. 
+I have also started a blog to record the lessons I learn as I continue on this course. So feel free to head over and read about my journey.
